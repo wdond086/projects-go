@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Task Manager CLI",
+            "type": "shell",
+            "command": "go build ./task_manager_cli -o task-cli",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Test Task Manager CLI",
+            "type": "shell",
+            "command": "go test ./task_manager_cli",
+            "problemMatcher": [],
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            }
+        }
+    ]
+}
