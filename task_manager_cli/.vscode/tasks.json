@@ -1,0 +1,30 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "go",
+			"label": "Build task-manager-cli",
+			"command": "build",
+			"args": [
+				"-o",
+				"./build/task-cli"
+			],
+			"problemMatcher": [
+				"$go"
+			],
+			"group": "build",
+		},
+		{
+			"type": "go",
+			"label": "Test task-manager-cli",
+			"command": "test",
+			"args": [
+				"-v",
+			],
+			"problemMatcher": [
+				"$go"
+			],
+			"group": "test"
+		}
+	]
+}

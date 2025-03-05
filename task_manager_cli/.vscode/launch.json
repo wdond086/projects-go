@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug Task Manager CLI",
+            "type": "go",
+            "request": "launch",
+            "mode": "debug",
+            "program": "${workspaceFolder}/main.go",
+            "env": {
+                "ENVIRONMENT": "development"
+            },
+            "args": [],
+            "preLaunchTask": "Build task-manager-cli",
+            "cwd": "${workspaceFolder}",
+            "stopOnEntry": false,
+            "showLog": true,
+            "dlvFlags": []
+        }
+    ]
+}
