@@ -1,0 +1,68 @@
+# Binaries and executables
+*.exe
+*.dll
+*.so
+*.dylib
+*.out
+*.a
+*.o
+*.log
+
+# Go Build Cache
+/tmp/
+*.test
+*.prof
+*.profraw
+
+# Dependency directories (Go Modules)
+vendor/
+
+# Environment Files
+.env
+.env.*
+
+# IDE and Editor Settings
+.vscode/
+.idea/
+*.swp
+*.bak
+*.tmp
+*.sublime-workspace
+
+# Testing and Coverage Reports
+coverage.*
+*.coverprofile
+*.cov
+*.lcov
+*.test_output
+
+# Logs and Debugging
+*.log
+*.trace
+
+# Docker & Kubernetes
+docker-compose.override.yml
+*.dockerfile
+
+# Go Module Files (if you want to ignore local module cache)
+go.sum
+
+# Cache directories
+.cache/
+__pycache__/
+*.pyc
+
+# MacOS system files
+.DS_Store
+
+# JetBrains IDE files
+*.iml
+
+# Ignore Node Modules (if front-end mixed in)
+node_modules/
+
+# AWS & Terraform files
+*.tfstate
+*.tfstate.*
+.terraform/
+*.tfvars
