@@ -17,12 +17,14 @@
 # Dependency directories (Go Modules)
 vendor/
 
+# Build dirs
+**/build/**
+
 # Environment Files
 .env
 .env.*
 
 # IDE and Editor Settings
-.vscode/
 *.code-workspace
 # Share workspace settings
 !.vscode/settings.json

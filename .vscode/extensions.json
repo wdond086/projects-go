@@ -3,6 +3,5 @@
         "golang.go",
         "ms-vscode-remote.remote-containers",
         "redhat.vscode-yaml",
-        "editorconfig.editorconfig"
     ]
 }
