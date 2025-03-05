@@ -23,6 +23,10 @@ vendor/
 
 # IDE and Editor Settings
 .vscode/
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/tasks.json
+!.vscode/launch.json
 .idea/
 *.swp
 *.bak
