@@ -23,6 +23,7 @@ vendor/
 
 # IDE and Editor Settings
 .vscode/
+*.code-workspace
 # Share workspace settings
 !.vscode/settings.json
 # Share recommended extensions
