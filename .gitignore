@@ -23,9 +23,13 @@ vendor/
 
 # IDE and Editor Settings
 .vscode/
+# Share workspace settings
 !.vscode/settings.json
+# Share recommended extensions
 !.vscode/extensions.json
+# Share build/test tasks
 !.vscode/tasks.json
+# Share debug configurations
 !.vscode/launch.json
 .idea/
 *.swp
