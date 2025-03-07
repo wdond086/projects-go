@@ -7,15 +7,44 @@
             "request": "launch",
             "mode": "debug",
             "program": "${workspaceFolder}/main.go",
-            "env": {
-                "ENVIRONMENT": "development"
-            },
+            "console": "integratedTerminal",
+            // For something else like a server I would add this
+            // But since this a CLI app, they are provided as arguments to the command
+            // "env": {
+            // "ENVIRONMENT": "development",
+            // "STDOUT_LOG_FILE_PATH": "${workspaceFolder}/logs/stdout.log",
+            // "STDERR_LOG_FILE_PATH": "${workspaceFolder}/logs/stderr.log",
+            // "LOG_LEVEL": "debug",
+            // },
             "args": [],
-            "preLaunchTask": "Build task-manager-cli",
             "cwd": "${workspaceFolder}",
-            "stopOnEntry": false,
-            "showLog": true,
-            "dlvFlags": []
+        },
+        {
+            "name": "Run Task Manager CLI",
+            "type": "go",
+            "request": "launch",
+            "mode": "debug",
+            "program": "${workspaceFolder}/main.go",
+            "args": [
+                "${input:args}"
+            ],
+            "console": "integratedTerminal",
+            // For something else like a server I would add this
+            // But since this a CLI app, they are provided as arguments to the command
+            // "env": {
+            // "ENVIRONMENT": "development",
+            // "STDOUT_LOG_FILE_PATH": "${workspaceFolder}/logs/stdout.log",
+            // "STDERR_LOG_FILE_PATH": "${workspaceFolder}/logs/stderr.log",
+            // "LOG_LEVEL": "debug",
+            // },
+        }
+    ],
+    "inputs": [
+        {
+            "id": "args",
+            "type": "promptString",
+            "description": "Enter command-line arguments",
+            "default": ""
         }
     ]
 }
