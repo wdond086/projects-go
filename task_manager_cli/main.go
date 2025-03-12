@@ -9,8 +9,8 @@ import (
 )
 
 func main() {
-	ctx, ctxDone := context.WithCancel(context.Background())
-	defer ctxDone()
+	ctx, cancel := context.WithCancel(context.Background())
+	defer cancel()
 
 	ctx = task_cli.WithLogger(ctx, task_cli.NewLogger())
 	ctx = task_cli.WithTransactionId(ctx)
